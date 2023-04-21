@@ -1,28 +1,27 @@
 import React from 'react';
 import { StyleSheet,Text,View } from 'react-native';
 
-import Header from './src/Header'
-
-import Boxes from './src/Boxes'
 
 
 
-const App =()=> {
+
+const Header =()=> {
   return(
     <View style ={styles.container}>
-     <Header/>
-     <Boxes/>
+   <Text>Cmponente del Header </Text>
     </View>
   );
 }
 
-export default App;
+export default Header;
 
 const styles = StyleSheet.create({
   container :{
-    flex :1,
+    width :'100%',
+    height:'15%',
     alignItems :'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor:'#eee'
   }
-})
+});
 
